@@ -6,7 +6,7 @@ class onkyoserial:
 
   def ser_cmd(self, cmd):
     if self.ser.isOpen():
-      self.ser.write(''.join(['!', cmd, '\r']))
+      self.ser.write(''.join(['!1', cmd, '\r']))
 
   def pwr_on(self):
     """System power on."""
